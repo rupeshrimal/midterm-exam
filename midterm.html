@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rupesh Rimal</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="nav-left">
+                <a href="https://developer.mozilla.org/en-US/docs/Glossary/HTML5">HTML5</a>
+                <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript">JavaScript</a>
+                <a href="https://developer.mozilla.org/en-US/docs/Web/CSS">CSS</a>
+            </div>
+            <div class="nav-right">
+                <button data-bs-theme-value="dark" onclick="setTheme('dark')">Dark</button>
+                <button data-bs-theme-value="light" onclick="setTheme('light')">Light</button>
+                <button>Contact Me</button>
+            </div>
+        </nav>
+    </header>
+    
+    <main>
+        <div class="grid-container">
+            <div class="grid-item left">
+                <p>Enter a number to calculate its factorial:</p>
+            </div>
+            <div class="grid-item right">
+                <input type="number" id="numberInput" class="input-box">
+            </div>
+            <div class="grid-item left">
+                <button id="calculateBtn" onclick="calculateFactorial()">Enter</button>
+            </div>
+            <div class="grid-item right result-box" id="result">Result will be displayed here.</div>
+        </div>
+    </main>
+    
+    <footer>
+        <p>&copy; 2025 Your Name. All rights reserved.</p>
+    </footer>
+    
+    <script src="js/script.js"></script>
+    <script>
+        function setTheme(theme) {
+            document.body.setAttribute('data-theme', theme);
+        }
+    </script>
+</body>
+</html>
